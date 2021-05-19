@@ -124,8 +124,11 @@ header .content-wrapper {
 }
 
 header figure img {
-  width: 100%;
-  margin: 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .header-divider {
@@ -188,7 +191,7 @@ footer h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 footer .contact,
@@ -548,19 +551,38 @@ aside p {
     text-align: right;
   }
 
+  footer {
+    width: 100%;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  .footer-content,
+  .contact,
+  .social,
+  .copyright {
+    flex-flow: row wrap;
+  }
+
   footer .footer-content {
+    width: 100%;
     justify-content: space-around;
+
   }
 
   footer .contact {
-    width: 21%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column nowrap;
   }
 
   footer .social {
     width: 30%;
+    flex-flow: column nowrap;
   }
 
   footer .copyright {
@@ -589,6 +611,10 @@ aside p {
   }
 
   /* Tablet - Features */
+
+  .features h2 {
+    width: 100%;
+  }
 
   .features .features-items {
     justify-content: space-around;
@@ -683,7 +709,59 @@ aside p {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+  /* ---------------- Desktop base Header - Footer Styles ------------------- */
+  header {
+    padding: 22px 0;
+  }
+
+  header .content-wrapper {
+    margin: 0 120px;
+    padding: 0;
+  }
+
+  footer {
+    width: 100%
+  }
+
+  footer .footer-content {
+    width: 100%;
+  }
+
+  footer .contact {
+    width: 30%;
+    flex-flow: column nowrap;
+  }
+
+  /* ------------------------- Desktop - Aside ------------------------------ */
+  aside .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  aside .form-description {
+    width: 27%;
+  }
+
+  aside .form {
+    width: 30%;
+  }
+
+  /* Desktop - Features */
+
+  .features article {
+    flex-basis: 15%;
+    margin: 0 60px;
+  }
+
+  /* ===========================================================================
+  Desktop - About page
+  =========================================================================== */
+
+
+  /* ===========================================================================
+  Desktop - FAQ page
+  =========================================================================== */
 }
 
 @media print,
