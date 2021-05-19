@@ -228,6 +228,12 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
+.hero-area .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .hero-area h1 {
   margin: 50px 0;
   padding: 0;
@@ -260,6 +266,7 @@ aside p {
 }
 
 .form input {
+  width: 100%;
   margin: 9px 0;
 }
 
@@ -280,6 +287,7 @@ aside p {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features .features-items {
@@ -294,11 +302,11 @@ aside p {
   margin: 0;
 }
 
-.fontawesome-icon {
+.features .fontawesome-icon {
  margin: 20px 0;
 }
 
-.features-item-description {
+.features .features-item-description {
   margin: 20px 0;
 }
 
@@ -311,6 +319,12 @@ aside p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .reviews h2 {
@@ -340,6 +354,12 @@ aside p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.mission .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .mission h2 {
@@ -490,8 +510,180 @@ aside p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* -------------------- Tablet base styles -------------------------------- */
+  .content-wrapper {
+    width: 80%;
+  }
+
+  /* ---------------- Tablet base Header - Footer Styles -------------------- */
+  header {
+    padding: 30px 0;
+  }
+
+  header .content-wrapper {
+    padding: 0 65px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  header figure {
+    margin: 0;
+  }
+
+  header figure img {
+    width: 100%;
+  }
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav ul {
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+  header nav ul li a {
+    text-align: right;
+  }
+
+  footer .footer-content {
+    justify-content: space-around;
+  }
+
+  footer .contact {
+    width: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .social {
+    width: 30%;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ===========================================================================
+  Tablet - Home page
+  =========================================================================== */
+
+  /* Tablet - Aside */
+
+  aside .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  aside .form-description {
+    width: 40%;
+  }
+
+  aside .form {
+    width: 40%;
+  }
+
+  /* Tablet - Features */
+
+  .features .features-items {
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+  .features article {
+    flex-basis: 30%;
+    margin: 0 30px;
+  }
+
+  /* Tablet - Reviews */
+
+  .reviews .content-wrapper {
+    flex-flow: row wrap;
+  }
+
+  .reviews h2 {
+    width: 100%;
+  }
+
+  .reveiws .review-image {
+    width: 41%;
+  }
+
+  .reviews article {
+    width: 41%;
+  }
+
+  /* ===========================================================================
+  Tablet - About page
+  =========================================================================== */
+  /* Tablet - Mission */
+
+  .mission h2 {
+    width: 100%;
+  }
+
+  .mission .mission-content {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .mission .mission-content p {
+    width: 45%;
+  }
+
+  /* Tablet Contacts */
+
+  .contact-section .content-wrapper {
+    justify-content: center;
+  }
+
+  .contact-section .content-wrapper h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .contact-section .contact-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .contact-section .contact-info div {
+    width: 40%;
+  }
+
+  /* ===========================================================================
+  Tablet - FAQ page
+  =========================================================================== */
+  /* Tablet - FAQ */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq .question {
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles here */
 }
 
 @media print,
