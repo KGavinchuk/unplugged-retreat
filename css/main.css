@@ -101,6 +101,7 @@ body {
 
 ul,
 ol {
+  padding: 0;
   list-style-type: none;
 }
 
@@ -128,21 +129,21 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
-  margin: 1.25em 0;
+  margin: 1.25em 0 0.7em 0;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875em;
-  line-height: 1.125em;
+  line-height: 1.4em;
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -154,7 +155,7 @@ address {
 
 .content-wrapper {
   width: 90%;
-  margin: 3.125em 0;
+  margin: 3em 0;
 }
 
 /* ---------------------- Base Header - Footer Styles ----------------------- */
@@ -182,16 +183,15 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-header figure img {
-  margin: auto;
-  width: 80%;
+header figure {
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 header .header-divider {
-  margin: 0.625em 0 1.25em 0;
+  margin: 0.625em 0 1em 0;
   background: #3a3a3a;
   height: 1px;
   width: 100%;
@@ -210,6 +210,7 @@ header nav {
 
 header nav ul {
   width: 100%;
+  margin: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -231,11 +232,12 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 3.125em 0;
+  margin-top: 2.5em;
+  margin-bottom: 0;
 }
 
 footer .contact {
-  margin-bottom: 3.125em;
+  margin-bottom: 2.5em;
 }
 
 footer .social-icons {
@@ -244,18 +246,16 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons p {
+footer .social-icons figure {
+  margin-bottom: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 footer .copyright {
+  width: 100%;
   margin: 1.25em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
 }
 
 /* ==========================================================================
@@ -265,9 +265,16 @@ footer .copyright {
 /* Hero area */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.png') no-repeat #333;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  margin-bottom: 10em;
 }
 
 /* Aside */
@@ -278,6 +285,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+  margin: 0 0 3em 0;
 }
 
 aside .form {
@@ -309,13 +320,20 @@ input[type=button] {
 /*Features */
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg') no-repeat #333;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
+.features .content-wrapper {
+    margin: 2em 0;
+}
+
 .features h2 {
-  margin-bottom: 3.75em;
+  margin-bottom: 1em;
 }
 
 .features p {
@@ -326,21 +344,21 @@ input[type=button] {
 .features article {
   width: 60%;
   margin: 1.875em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
 }
 
 .features .features-items {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
 .features .fontawesome-icon {
-
-}
-
-.features .features-item-description {
-
+  margin-bottom: 3.125em;
 }
 
 /* Reviews */
@@ -352,14 +370,22 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.reviews .content-wrapper {
+    margin: 2.2em 0;
+}
+
 .reviews h2 {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.2em;
   line-height: 1em;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 1.25em 0;
+}
+
+.reviews figure {
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -375,6 +401,29 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
 }
+
+.mission h2,
+.contact-section h2 {
+  margin: 0;
+}
+
+.mission h4,
+.contact-section h4 {
+  margin: 0.5em 0;
+}
+
+/* Map */
+
+.map {
+  width: 100%;
+  padding: 11em 0;
+  background: url('../img/map.png') no-repeat #333;
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* Contact */
 
 .contact-section {
   background-color: #2a423a;
@@ -403,15 +452,14 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
-  padding: 3.125em 0 0 0;
+  margin-bottom: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .faq h2 {
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
   line-height: 1em;
 }
 
@@ -420,6 +468,7 @@ input[type=button] {
 }
 
 .faq-questions h4 {
+  margin: 0;
   line-height: 1.333em;
 }
 
@@ -528,6 +577,7 @@ input[type=button] {
   }
 
     .content-wrapper {
+      width: 100%;
       max-width: 640px;
       margin: 6.25em 0;
     }
@@ -545,7 +595,7 @@ input[type=button] {
   }
 
   header figure {
-    width: 30%;
+    width: 35%;
   }
 
   header nav {
@@ -566,48 +616,62 @@ input[type=button] {
 
   footer h4 {
     font-size: 1.5em;
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
   }
 
   footer p {
-    line-height: 1.285em;
+    line-height: 1.7em;
   }
 
   footer .content-wrapper {
     width: 65%;
-    margin: 6.25em 0;
+    margin: 5em 0 0 0;
   }
 
   footer .footer-content {
     display: flex;
-    align-items: center;
+    align-content: flex-start;
     justify-content: space-between;
     flex-flow: row wrap;
   }
 
   footer .contact {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 40%;
     margin-bottom: 0;
   }
 
   footer .copyright {
     width: 100%;
+    margin-top: 5em;
   }
 
   /* ===========================================================================
   Tablet - Home Page
   =========================================================================== */
   /* Tablet - Hero Area */
+  .hero-area .content-wrapper {
+    margin: 5em 0;
+  }
 
   .hero-area h1 {
     font-size: 3em;
     line-height: 1em;
-    margin: 0;
+    margin: 0 0 5em 0;
   }
 
   /* Tablet - Aside */
 
+  aside .content-wrapper {
+    margin: 0;
+  }
+
   aside .contact-form {
-    margin: 3.125em 0;
+    margin: 1em 0 3.125em 0;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -619,43 +683,64 @@ input[type=button] {
     margin: 0;
   }
 
+  input[type=button] {
+    padding: 15px 0;
+  }
+
   /* Tablet - Features */
 
+  .features .content-wrapper {
+    margin: 3.5em 0;
+  }
+
   .features h2 {
-    margin-bottom: 1.25em;
+    margin: 1.5em 0 0 0;
   }
 
   .features article {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     flex-basis: 50%;
   }
 
   .features .features-item-description {
     width: 65%;
+
   }
 
   /* Tablet - Reviews */
 
+  .reviews .content-wrapper {
+    margin: 4em 0 7em 0;
+  }
+
   .reviews h2 {
+    margin: 1em 0 0.5em 0;
     width: 85%;
+    line-height: 1.2em;
   }
 
   .reviews h3 {
-    width: 50%;
+    width: 80%;
     margin: 0;
   }
 
-  .reviews article {
+  .reviews .review-description {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
   }
 
-  .reviews article div {
-    width: 49%;
+  .reviews .review-description figure {
+    width: 50%;
+  }
+
+  .reviews article {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
   }
 
   /* ===========================================================================
@@ -668,11 +753,11 @@ input[type=button] {
   }
 
   .mission p {
-    width: 45%;
+    width: 46%;
   }
 
   .mission .mission-content {
-    padding: 1.25em;
+    padding-top: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -707,14 +792,15 @@ input[type=button] {
   .faq h4,
   .faq p {
     font-size: 0.875em;
-    line-height: 1.125em;
+    line-height: 1.4em;
   }
 
   .faq .content-wrapper {
+    margin: 6em 0 3.125em 0;
     justify-content: space-between;
   }
 
-  .faq .faq-question {
+  .faq .faq-questions {
     flex-basis: 45%;
   }
 }
@@ -723,6 +809,11 @@ input[type=button] {
   /* ========================================================================
      Desktop Base Styles
      ======================================================================== */
+
+  h1 {
+    width: 65%;
+    font-size: 3.75em;
+  }
 
   h2 {
     font-size: 2.25em;
@@ -735,7 +826,11 @@ input[type=button] {
 
   p {
     font-size: 1.125em;
-    line-height: 1.333em;
+    line-height: 1.5em;
+  }
+
+  a {
+    font-size: 1em
   }
 
   .content-wrapper {
@@ -748,34 +843,87 @@ input[type=button] {
     padding: 0.9375em 0;
   }
 
+  header figure {
+    width: 27%;
+  }
+
+  header nav {
+    width: 15%;
+    justify-content: space-between;
+  }
+
   /* Desktop - Footer */
 
+  footer .content-wrapper {
+    margin: 3em 0 0 0;
+  }
+
   footer h4 {
+    margin: 1.25em 0 1em 0;
     font-size: 1.875em;
+  }
+
+  footer p {
+    line-height: 1.5em;
+  }
+
+  footer .contact {
+    width: 30%;
+  }
+
+  footer .social {
+    width: 30%;
   }
 
   /* ===========================================================================
   Tablet - Home Page
   =========================================================================== */
+  /* Desktop - Hero Area */
+
+  .hero-area .content-wrapper {
+    margin: 3em 0;
+  }
+
+  .hero-area h1 {
+    margin-bottom: 10em;
+    line-height: 1.2em;
+  }
+
   /* Desktop - Aside */
 
   aside .content-wrapper {
-    justify-content: space-around;
+    width: 70%;
   }
 
-  aside .contact-wrapper .form-description,
-  aside .contact-wrapper .form {
-    width: 30%;
+  aside h3 {
+    font-size: 1.7em;
+  }
+
+  aside .content-wrapper .form-description{
+    width: 35%
+  }
+
+  aside .content-wrapper .form {
+    width: 35%;
   }
 
   aside .content-wrapper .form-description p {
     font-size: 1.125em;
   }
 
+  input[type=button] {
+    font-size: 1.3em;
+  }
+
   /* Desktop - Features */
 
   .features h2 {
     width: 90%;
+    margin: 1.5em 0;
+  }
+
+  .features .features-items {
+    align-items: baseline;
   }
 
   .features article {
@@ -785,7 +933,11 @@ input[type=button] {
   /* Desktop - Reviews */
 
   .reviews h2 {
-    padding-bottom: 3.125em;
+    padding-bottom: 1.5em;
+  }
+
+  .reviews article {
+    justify-content: flex-start;
   }
 
   .reviews article div {
@@ -802,15 +954,29 @@ input[type=button] {
     font-size: 3em;
   }
 
+  .mission .mission-content {
+    padding: 0;
+  }
+
+  /* Desktop - Map */
+
+  .map {
+    padding: 15em 0;
+  }
+
   /* Desktop - Contact */
 
   .contact-section h2 {
-    width: 95%;
+    width: 100%;
     font-size: 3em;
   }
 
   .contact-section h4 {
     font-size: 1.875em;
+  }
+
+  .contact-section .contact-info div {
+    width: 50%;
   }
 
   /* ===========================================================================
@@ -826,7 +992,10 @@ input[type=button] {
   .faq h4,
   .faq p {
     font-size: 1.125em;
-    line-height: 1em;
+  }
+
+  .faq .faq-questions {
+    margin-bottom: 1em;
   }
 }
 
