@@ -771,6 +771,12 @@ input[type=button] {
     flex-flow: row wrap;
   }
 
+  /* Tablet Map */
+
+  .map figure {
+    padding-bottom: 50%;
+  }
+
   /* Tablet Contacts */
 
   .contact-section h2 {
@@ -967,7 +973,9 @@ input[type=button] {
 
   /* Desktop - Map */
 
-
+  .map figure {
+    padding-bottom: 38%;
+  }
 
   /* Desktop - Contact */
 
