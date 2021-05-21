@@ -184,21 +184,21 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 60%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 header .header-divider {
+  width: 100%;
+  height: 1px;
   margin: 0.625em 0 1em 0;
   background: #3a3a3a;
-  height: 1px;
-  width: 100%;
 }
 
 header nav {
-  width: 60%;
+  width: 65%;
   font-size: 1.125em;
   font-weight: bold;
   text-transform: uppercase;
@@ -277,15 +277,14 @@ footer .copyright {
 
 .hero-area {
   background: url('../img/jake-melara-30679-unsplash.png') no-repeat #333;
-  background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .hero-area h1 {
-  margin-bottom: 10em;
+  margin: 0 0 7.6em 0;
 }
 
 /* Aside */
@@ -316,12 +315,12 @@ input[type=text] {
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
+  padding: 1em 0;
   margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 1.125em;
+  font-size: 1.2em;
   color: #e2e3ed;
   border: none;
   text-align: center;
@@ -673,6 +672,11 @@ input[type=button] {
   Tablet - Home Page
   =========================================================================== */
   /* Tablet - Hero Area */
+  .hero-area {
+    background-size: cover;
+    background-position: center;
+  }
+
   .hero-area .content-wrapper {
     margin: 5em 0;
   }
@@ -696,14 +700,22 @@ input[type=button] {
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
+  aside .content-wrapper .form-description {
     width: 40%;
     margin: 0;
   }
 
+  aside .content-wrapper .form {
+    width: 48%;
+    margin: 0;
+  }
+
+  input[type=text] {
+    padding: 0.625em;
+  }
+
   input[type=button] {
-    padding: 15px 0;
+    padding: 0.625em 0;
   }
 
   /* Tablet - Features */
@@ -836,8 +848,7 @@ input[type=button] {
      ======================================================================== */
 
   h1 {
-    width: 65%;
-    font-size: 3.75em;
+    width: 75%;
   }
 
   h2 {
@@ -865,15 +876,15 @@ input[type=button] {
   /* Desktop - Header */
 
   header {
-    padding: 0.9375em 0;
+    padding: 1.5em 0;
   }
 
   header figure {
-    width: 27%;
+    width: 30%;
   }
 
   header nav {
-    width: 15%;
+    width: 18%;
     justify-content: space-between;
   }
 
@@ -893,11 +904,15 @@ input[type=button] {
   }
 
   footer .contact {
-    width: 30%;
+    width: 31%;
   }
 
   footer .social {
-    width: 30%;
+    width: 31%;
+  }
+
+  footer .social-icons p {
+    font-size: 0.7em;
   }
 
   /* ===========================================================================
@@ -910,7 +925,8 @@ input[type=button] {
   }
 
   .hero-area h1 {
-    margin-bottom: 10em;
+    margin-bottom: 6em;
+    font-size: 3.75em;
     line-height: 1.2em;
   }
 
@@ -921,23 +937,33 @@ input[type=button] {
   }
 
   aside h3 {
-    font-size: 1.7em;
+    margin: 1em 0 0.3em 0;
+    font-size: 2em;
   }
 
-  aside .content-wrapper .form-description{
-    width: 35%
+  aside .content-wrapper .form-description {
+    width: 40%
+  }
+
+  aside .content-wrapper .form-description p {
+    width: 85%;
+    margin: 0;
   }
 
   aside .content-wrapper .form {
-    width: 35%;
+    width: 41%;
   }
 
   aside .content-wrapper .form-description p {
     font-size: 1.125em;
   }
 
+  input[type=text] {
+    padding: 1em;
+  }
+
   input[type=button] {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   /* Desktop - Features */
